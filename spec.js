@@ -23,6 +23,7 @@ describe('getDuplicates', function(){
 
   it('throws exception when non-integer is in array', function(){
     expect(function(){getDuplicates(array5)}).toThrow("contains non-integer");
+    expect(function(){getDuplicates(array6)}).toThrow("contains non-integer");
     expect(function(){getDuplicates(array3)}).not.toThrow("contains non-integer");
     expect(function(){getDuplicates(array4)}).not.toThrow("contains non-integer");
   });

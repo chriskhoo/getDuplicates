@@ -21,6 +21,16 @@ var getDuplicates = function(array){
   // });
   // if (notInt)
   // {throw "contains non-integer";}
+  var notInt = false;
+  array.forEach(function(unit){
+    var numCheck = parseInt(unit);
+    if (numCheck !== unit){
+      notInt = true;
+    }
+  });
+  if (notInt)
+  {throw "contains non-integer";}
+
 
   var uniqueArr = [];
   var duplicateArr = [];
